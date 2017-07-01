@@ -23,7 +23,7 @@
 <body>
  
 <p>點擊灰色長條來 摺疊/展開</p>
-<div class="symbol_bar"><span id='symbol'>+</span><span>數位板氣象資料撈取</span></div><iframe width="100%" id="toggle" src="http://player.vimeo.com/video/63534746"></iframe>
+<div class="symbol_bar"><span id='symbol'>+</span><span>數位板氣象資料撈取</span></div><iframe width="100%" id="toggle" src="001/001_datacollect.php"></iframe>
  
 <script>
 $( "#symbol" ).click(function() {
