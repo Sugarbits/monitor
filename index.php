@@ -2,15 +2,18 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>折叠特效（Fold Effect）演示</title>
+  <title></title>
   <link rel="stylesheet" href="//apps.bdimg.com/libs/jqueryui/1.10.4/css/jquery-ui.min.css">
   <style>
 .toggle_active {
     background: #f00;!important
   }
 #symbol{
-    height: 20px;
-    background: #00f;
+	font-size:30px;
+  }
+  .symbol_bar{
+	height: 30px;
+    background: #ccc;
   }
 
   </style>
@@ -19,8 +22,8 @@
 </head>
 <body>
  
-<p>点击任意地方进行切换。</p>
-<div id='symbol' class="">+</div><iframe width="100%" id="toggle" src="https://www.w3schools.com"></iframe>
+<p>點擊灰色長條來 摺疊/展開</p>
+<div class="symbol_bar"><span id='symbol'>+</span><span>數位板氣象資料撈取</span></div><iframe width="100%" id="toggle" src="http://player.vimeo.com/video/63534746"></iframe>
  
 <script>
 $( "#symbol" ).click(function() {
@@ -28,7 +31,7 @@ $( "#symbol" ).click(function() {
 	var text = $(this).text() == '+' ? '-' : '+';
 	$(this)
     .text(text)
-    .toggleClass("toggle_active");
+   // .toggleClass("toggle_active");
 
 	
 });
